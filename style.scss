@@ -44,7 +44,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .banner-bottom{
-    height: 340px;
+    min-height: 340px;
     background-color: #222224;
     
     &__container{
@@ -56,9 +56,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    &__img{
-        margin: 0 auto;
     }
     &__heading{
         font-size: 20px;
@@ -77,3 +74,16 @@ color: #FBFBFB;
     }
     
 }
+// медиазапрос  для планшета
+@media (max-width: 1024px) {
+    .banner-bottom__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-bottom__block{
+        margin: 48px 0;
+    }
+}
+
+// медиазапрос для телефона
+@media (max-width: 800px){}

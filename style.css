@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner-bottom {
-  height: 340px;
+  min-height: 340px;
   background-color: #222224;
 }
 .banner-bottom__container {
@@ -90,9 +90,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.banner-bottom__img {
-  margin: 0 auto;
 }
 .banner-bottom__heading {
   font-size: 20px;
@@ -108,4 +105,15 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 17px;
   text-align: center;
   color: #FBFBFB;
+}
+
+@media (max-width: 1024px) {
+  .banner-bottom__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-bottom__block {
+    margin: 48px 0;
+  }
 }/*# sourceMappingURL=style.css.map */
