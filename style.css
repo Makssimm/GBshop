@@ -77,6 +77,33 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+.nav {
+  min-height: 75px;
+  background: #222222;
+}
+
+.banner-top {
+  min-height: 764px;
+  background-color: #F1E4E6;
+  background-image: url(img/background_top.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner-top__text {
+  width: 403px;
+  font-size: 48px;
+  font-weight: 900;
+  position: absolute;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.red {
+  color: #F16D7F;
+}
+
 .banner-bottom {
   min-height: 340px;
   background-color: #222224;
