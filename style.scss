@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 $container-width: 1140px;
 /*Обнуление*/
 *{
@@ -37,9 +39,13 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+
+body{
+    font-family: "Lato";
+}
+
 .container{
-    // max-width: $container-width;
-    max-width: 1140px;
+    max-width: $container-width;
     margin: 0 auto;
 }
 .nav{
@@ -48,21 +54,39 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .banner-top{
-    min-height: 764px;
     background-color: #F1E4E6;
-    background-image: url(img/background_top.png);
-    background-repeat: no-repeat;
-    position: relative;
-    &__text{
-        width: 403px;
-        font-size: 48px;
-        font-weight: 900;
+    
+    &__container{
+        min-height: 764px;
+        background: url(img/background_top.png) -65% 100% no-repeat;
+        position: relative;
+    }
+    &__box{
         position: absolute;
+        top: 35%;
+        right: 0;
+        display: flex;
+    }
+    &__box::before{
+        content: "";
+        display: block;
+        width: 12px;
+        height: 92px;
+        background-color: #F16D7F;
+        margin-right: 16px;
+    }
+    &__text{
+        width: 431px;
+        font-weight: 700;
+font-size: 36px;
+text-transform: uppercase;
+line-height: 48px;
     }
 }
-
 .uppercase{
     text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 900;
 }
 .red{
     color: #F16D7F;
@@ -102,6 +126,30 @@ color: #FBFBFB;
 
 // медиазапрос  для планшета
 @media (max-width: 1024px) {
+
+    .banner-top{
+        &__container{
+            min-height: 368px;
+            background: url(img/background_top_tablet.png) left 100% no-repeat;
+            position: relative;
+        }
+        &__box{
+            right: 50%;
+        }
+        &__box::before{
+            content: "";
+            display: block;
+            width: 12px;
+            height: 92px;
+            background-color: #F16D7F;
+            margin-right: 16px;
+        }
+        &__text{
+            font-size: 32px;
+            position: absolute;
+            padding-left: 16px;
+        }
+    }
     .banner-bottom__container{
         flex-direction: column;
         align-items: center;
@@ -114,4 +162,22 @@ color: #FBFBFB;
 
 
 // медиазапрос для телефона
-@media (max-width: 800px){}
+@media (max-width: 767px){
+
+    .banner-top{
+        &__container{
+            min-height: 368px;
+    background-image: none;
+            position: relative;
+            display: flex;
+            text-align: center;
+        }
+        &__box{
+            position: static;
+            
+        }
+        &__text{
+            font-size: 26px;
+    }
+}
+}
