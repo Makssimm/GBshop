@@ -83,6 +83,36 @@ text-transform: uppercase;
 line-height: 48px;
     }
 }
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    display: block;
+    width: 360px;
+    background-color: #F8F8F8;
+    margin-bottom: 30px;
+    &__heading{
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+        padding: 23px 0 13px 18px;
+    }
+    &__text{
+        font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+color: #5D5D5D;
+padding: 0 18px;
+    }
+    &__price{
+        font-size: 16px;
+line-height: 19px;
+color: #F16D7F;
+padding: 18px 0 20px 18px;
+    }
+}
 .uppercase{
     text-transform: uppercase;
     font-size: 48px;
@@ -124,60 +154,60 @@ color: #FBFBFB;
 }
 
 
-// медиазапрос  для планшета
-@media (max-width: 1024px) {
+// // медиазапрос  для планшета
+// @media (max-width: 1024px) {
 
-    .banner-top{
-        &__container{
-            min-height: 368px;
-            background: url(img/background_top_tablet.png) left 100% no-repeat;
-            position: relative;
-        }
-        &__box{
-            right: 50%;
-        }
-        &__box::before{
-            content: "";
-            display: block;
-            width: 12px;
-            height: 92px;
-            background-color: #F16D7F;
-            margin-right: 16px;
-        }
-        &__text{
-            font-size: 32px;
-            position: absolute;
-            padding-left: 16px;
-        }
-    }
-    .banner-bottom__container{
-        flex-direction: column;
-        align-items: center;
-    }
-    .banner-bottom__block{
-        margin: 48px 0;
-    }
-}
+//     .banner-top{
+//         &__container{
+//             min-height: 368px;
+//             background: url(img/background_top_tablet.png) left 100% no-repeat;
+//             position: relative;
+//         }
+//         &__box{
+//             right: 50%;
+//         }
+//         &__box::before{
+//             content: "";
+//             display: block;
+//             width: 12px;
+//             height: 92px;
+//             background-color: #F16D7F;
+//             margin-right: 16px;
+//         }
+//         &__text{
+//             font-size: 32px;
+//             position: absolute;
+//             padding-left: 16px;
+//         }
+//     }
+//     .banner-bottom__container{
+//         flex-direction: column;
+//         align-items: center;
+//     }
+//     .banner-bottom__block{
+//         margin: 48px 0;
+//     }
+// }
 
 
 
-// медиазапрос для телефона
-@media (max-width: 767px){
+// // медиазапрос для телефона
+// @media (max-width: 767px){
 
-    .banner-top{
-        &__container{
-            min-height: 368px;
-    background-image: none;
-            position: relative;
-            display: flex;
-            text-align: center;
-        }
-        &__box{
-            position: static;
+//     .banner-top{
+//         &__container{
+//             min-height: 368px;
+//     background-image: none;
+//             position: relative;
+//             display: flex;
+//             text-align: center;
+//         }
+//         &__box{
+//             position: static;
             
-        }
-        &__text{
-            font-size: 26px;
-    }
-}
-}
+//         }
+//         &__text{
+//             font-size: 26px;
+//     }
+// }
+// }
