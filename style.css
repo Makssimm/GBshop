@@ -82,9 +82,32 @@ body {
   margin: 0 auto;
 }
 
-.nav {
+.header {
   min-height: 75px;
   background: #222222;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__block {
+  display: flex;
+  align-items: center;
+  min-height: 75px;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__link {
+  display: inline-block;
+}
+.nav__link_left {
+  padding-left: 31px;
+}
+.nav__link_right {
+  padding-left: 20px;
 }
 
 .banner-top {

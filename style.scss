@@ -48,10 +48,33 @@ body{
     max-width: $container-width;
     margin: 0 auto;
 }
-.nav{
+.header{
     min-height: 75px;
     background: #222222;
 }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    &__block{
+        display: flex;
+        align-items: center;
+        min-height: 75px;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+    &__link{
+        display: inline-block;
+        &_left{
+            padding-left: 31px;
+        }
+        &_right{
+            padding-left: 20px;
+        }
+    }
+}
+
 
 .banner-top{
     background-color: #F1E4E6;
