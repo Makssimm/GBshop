@@ -109,6 +109,22 @@ body {
 .nav__link_right {
   padding-left: 20px;
 }
+.nav__link_relative {
+  position: relative;
+}
+.nav__link_counter {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #F16D7F;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -6px;
+  left: 42px;
+}
 
 .banner-top {
   background-color: #F1E4E6;
@@ -134,7 +150,7 @@ body {
   margin-right: 16px;
 }
 .banner-top__text {
-  width: 431px;
+  width: 446px;
   font-weight: 700;
   font-size: 36px;
   text-transform: uppercase;
@@ -145,28 +161,33 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.sections .sections__top {
+.sections__top {
   width: 1140px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.sections .sections__top_block {
+.sections__top_block {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.sections .sections__top_block-link {
+.sections__top_block-link {
   display: block;
 }
 .sections__bottom {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
 }
 .sections__text {
   text-transform: uppercase;
   position: absolute;
   text-align: center;
-  top: 40%;
-  left: 45%;
+  display: block;
 }
 .sections__text_top {
   font-size: 16px;
@@ -183,12 +204,36 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.cards__heading {
+  display: flex;
+  justify-content: center;
+  padding: 57px 0;
+}
+.cards__heading_title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+}
+.cards__heading_text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+}
 
 .card {
   display: block;
   width: 360px;
   background-color: #F8F8F8;
   margin-bottom: 30px;
+  position: relative;
+}
+.card:hover .image-main {
+  filter: brightness(33%);
+}
+.card:hover .card__addtocart {
+  display: flex;
 }
 .card__heading {
   font-size: 13px;
@@ -208,6 +253,44 @@ body {
   line-height: 19px;
   color: #F16D7F;
   padding: 18px 0 20px 18px;
+}
+.card__addtocart {
+  width: 138px;
+  height: 43px;
+  border: 1px solid #FFFFFF;
+  position: absolute;
+  top: 188.5px;
+  left: 111.5px;
+  display: none;
+  color: white;
+  align-items: center;
+}
+.card__cartwhite {
+  margin: 11px;
+}
+
+.browse-button {
+  display: flex;
+  width: 211px;
+  height: 47px;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+  background-color: #F16D7F;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FF6A6A;
+  box-sizing: border-box;
+  margin: 48.5px 0 95.5px 0;
+}
+.browse-button:hover {
+  color: #FF6A6A;
+  background-color: white;
+}
+.browse-button__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .uppercase {
@@ -253,4 +336,68 @@ body {
 .subscribe {
   background-image: url(img/background_bottom.jpg);
   min-height: 448px;
+  display: flex;
+}
+.subscribe__left {
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe__left_text {
+  width: 359px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+  padding-top: 30px;
+}
+.subscribe__right {
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe__right_heading {
+  font-size: 18px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224;
+  margin-bottom: 32px;
+}
+.subscribe__right_input {
+  background: #E1E1E1;
+  height: 49px;
+  border-top-left-radius: 24.5px;
+  border-bottom-left-radius: 24.5px;
+  padding: 0 50px 0 24.5px;
+}
+.subscribe__right_button {
+  height: 49px;
+  background: #E05C6E;
+  color: white;
+  border-top-right-radius: 24.5px;
+  border-bottom-right-radius: 24.5px;
+  padding: 0 18px;
+}
+.subscribe_bold {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer__bottom {
+  background: #222224;
+}
+.footer__bottom_container {
+  min-height: 79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__bottom_right {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
 }/*# sourceMappingURL=style.css.map */
