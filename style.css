@@ -94,6 +94,7 @@ body {
   min-height: 764px;
   background: url(img/background_top.png) -65% 100% no-repeat;
   position: relative;
+  margin-bottom: 65px;
 }
 .banner-top__box {
   position: absolute;
@@ -115,6 +116,43 @@ body {
   font-size: 36px;
   text-transform: uppercase;
   line-height: 48px;
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sections .sections__top {
+  width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sections .sections__top_block {
+  position: relative;
+}
+.sections .sections__top_block-link {
+  display: block;
+}
+.sections__bottom {
+  position: relative;
+  display: block;
+}
+.sections__text {
+  text-transform: uppercase;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 45%;
+}
+.sections__text_top {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.sections__text_bottom {
+  color: #F16D7F;
+  font-size: 24px;
 }
 
 .cards {
@@ -187,4 +225,9 @@ body {
   line-height: 17px;
   text-align: center;
   color: #FBFBFB;
+}
+
+.subscribe {
+  background-image: url(img/background_bottom.jpg);
+  min-height: 448px;
 }/*# sourceMappingURL=style.css.map */

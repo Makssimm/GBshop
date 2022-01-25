@@ -60,6 +60,7 @@ body{
         min-height: 764px;
         background: url(img/background_top.png) -65% 100% no-repeat;
         position: relative;
+        margin-bottom: 65px;
     }
     &__box{
         position: absolute;
@@ -81,6 +82,42 @@ body{
 font-size: 36px;
 text-transform: uppercase;
 line-height: 48px;
+    }
+}
+.sections{
+    display: flex;
+    flex-wrap: wrap;
+    .sections__top{
+        width: $container-width;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &_block{
+            position: relative;
+        }
+        &_block-link{
+            display: block;
+        }
+    }
+    &__bottom{
+        position: relative;
+        display: block;
+    }
+    &__text{
+        text-transform: uppercase;
+        position: absolute;
+        text-align: center;
+        top: 40%;
+    left: 45%;
+    &_top{
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+    }
+    &_bottom{
+        color: #F16D7F;
+        font-size: 24px;
+    }
     }
 }
 .cards{
@@ -151,6 +188,10 @@ text-align: center;
 color: #FBFBFB;
     }
     
+}
+.subscribe{
+    background-image: url(img/background_bottom.jpg);
+    min-height: 448px;
 }
 
 
