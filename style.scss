@@ -59,10 +59,25 @@ body{
         display: flex;
         align-items: center;
         min-height: 75px;
-    }
-    &__list{
-        display: flex;
-        align-items: center;
+        &_summary{
+            position: relative;
+            display: block;
+        }
+        &_summary-list{
+            position: absolute;
+            top: 75px;
+            right: 0;
+            width: 232px;
+            height: 764px;
+            background-color: white;
+        }
+        &_summary-link{
+            display: block;
+            font-size: 14px;
+line-height: 17px;
+color: #6F6E6E;
+padding: 11px 0 0 54px;
+        }
     }
     &__link{
         display: inline-block;
@@ -90,8 +105,9 @@ body{
         }
     }
 }
-
-
+details{
+    height: 25px;
+}
 .banner-top{
     background-color: #F1E4E6;
     
@@ -125,29 +141,21 @@ line-height: 48px;
 }
 .sections{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    &__top{
-        width: $container-width;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        &_block{
+        &__block{
             position: relative;
             display: flex;
     justify-content: center;
     align-items: center;
-        }
-        &_block-link{
-            display: block;
-        }
+             &_link{
+        display: block;
     }
-    &__bottom{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    &_bottom{
         margin: 30px 0;
     }
+        }
+   
     &__text{
         text-transform: uppercase;
         position: absolute;
@@ -238,16 +246,16 @@ padding: 18px 0 20px 18px;
     height: 47px;
     font-size: 16px;
 line-height: 19px;
-    color: white;
-    background-color: #F16D7F;
+color: #FF6A6A;
+background-color: white;
     justify-content: center;
     align-items: center;
     border: 1px solid #FF6A6A;
     box-sizing: border-box;
     margin: 48.5px 0 95.5px 0;
     &:hover{
-        color: #FF6A6A;
-        background-color: white;
+        color: white;
+        background-color: #F16D7F;
     }
     &__container{
         width: 100%;
@@ -262,6 +270,15 @@ line-height: 19px;
 }
 .red{
     color: #F16D7F;
+    &_link{
+        color: #F16D7F;
+        padding-left: 33px;
+        padding-top: 20px;
+    }
+    &_link-heading{
+        font-weight: bold;
+        padding: 37px 0 24px 34px;
+    }
 }
 .banner-bottom{
     min-height: 340px;
@@ -356,12 +373,26 @@ margin-bottom: 32px;
         justify-content: space-between;
         align-items: center;
     }
-    &_right{
+    &_left{
         font-size: 16px;
         line-height: 19px;
         color: #FBFBFB;
-        
+    }
+    &_right{
+        display: flex;
+    }
+    &_link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        background-color: white;
+        margin-left: 7px;
+        &:hover{
+            color: white;
+            background-color: #F16D7F;
+        }
     }
 }
-
 
