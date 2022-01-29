@@ -70,6 +70,7 @@ body{
             width: 232px;
             height: 764px;
             background-color: white;
+            z-index: 1;
         }
         &_summary-link{
             display: block;
@@ -395,4 +396,15 @@ margin-bottom: 32px;
         }
     }
 }
+
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
 
