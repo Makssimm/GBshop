@@ -219,6 +219,7 @@ details {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 1140px;
 }
 .cards__heading {
   display: flex;
@@ -701,4 +702,99 @@ details {
   float: left;
   padding: 8px 16px;
   text-decoration: none;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel {
+  height: 776px;
+  background-image: url(img/product_slider1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F7F7F7;
+  display: flex;
+  align-items: center;
+}
+.carousel__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+.carousel__button {
+  width: 47px;
+  height: 47px;
+  background-color: rgba(42, 42, 42, 0.15);
+  font-size: 21px;
+}
+.carousel__button:hover i {
+  color: #F16D7F;
+}
+
+.product-card {
+  width: 1140px;
+  height: 661px;
+  background-color: white;
+  border: 1px solid #EAEAEA;
+  margin: -64px 0 129px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-card__heading-top {
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #F16D7F;
+  margin-top: 65px;
+}
+.product-card__redline {
+  width: 63px;
+  height: 3px;
+  background: #EF5B70;
+  margin: 12px 0;
+}
+.product-card__heading-bottom {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  padding-bottom: 48px;
+  text-transform: uppercase;
+}
+.product-card__text {
+  width: 554px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E;
+}
+.product-card__price {
+  width: 641px;
+  height: 125px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+  border-bottom: 1px solid #EAEAEA;
+  text-align: center;
+  padding-top: 32px;
+}
+.product-card_filters {
+  min-height: 0px;
+  padding-top: 65px;
+}
+
+.cart-red {
+  fill: #F16D7F;
+  margin: 0 23px 0 0;
+}
+
+.product-card_button:hover .cart-red {
+  fill: white;
 }/*# sourceMappingURL=style.css.map */
