@@ -154,6 +154,10 @@ line-height: 48px;
             display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s ease;
+            &:hover{
+        transform: scale(1.06);
+    }
              &_link{
         display: block;
     }
@@ -677,13 +681,17 @@ text-transform: uppercase;
 line-height: 17px;
 text-transform: uppercase;
 color: #F16D7F;
-margin-top: 65px;
-    }
-    &__redline{
-        width: 63px;
-        height: 3px;
-        background: #EF5B70;
-        margin: 12px 0;
+margin: 65px 0 27px;
+position: relative;
+        &::after{
+    content: "";
+    width: 63px;
+    height: 3px;
+    background: #EF5B70;
+    position: absolute;
+    top: 26px;
+    left: 46px;
+}
     }
     &__heading-bottom{
         font-weight: 300;
@@ -766,6 +774,7 @@ color: #575757;
     justify-content: center;
     align-items: center;
     margin-left:  24px;
+    padding-left: 14px;
 }
     }
 }
@@ -815,6 +824,9 @@ background-color: white;
         line-height: 19px;
         color: #222222;
         text-transform: uppercase;
+        &-registration{
+            text-transform: capitalize;
+        }
     }
     &__button {
         width: 100px;
@@ -836,11 +848,26 @@ line-height: 13px;
     height: 214px;
     background: #F5F3F3;
     padding-top: 39px;
-    &__line{
-    width: 275px;
-    height: 1px;
-    background: #E2E2E2;
-    margin: 0 auto;
+    &__button {
+        width: 273px;
+        height: 50px;
+        background: #F16D7F;
+        font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+        text-transform: uppercase;
+        margin: 38px 43px;
+        position: relative;
+        &::before{
+            content: "";
+            width: 275px;
+            height: 1px;
+            background: #E2E2E2;
+            position: absolute;
+            top: -17px;
+            left: 0px;
+            }
     }
 }
 .subtotal {
@@ -862,16 +889,75 @@ font-size: 16px;
 line-height: 19px;
 color: #222222;
 text-transform: uppercase;
-margin: 0 0 21px 153px;
+margin: 0 0 0 153px;
 }
-.checkout__button {
-    width: 273px;
-    height: 50px;
-    background: #F16D7F;
-    font-weight: 300;
-font-size: 16px;
-line-height: 19px;
+.registration{
+    display: flex;
+    margin-top: 64px;
+    &__gender{
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+       display: flex;
+       padding: 0 20px 33px 0;
+       justify-content: space-between;
+       width: 71px;
+       &-box{
+           display: flex;
+       }
+    } 
+    &__input-text{
+        max-width: 360px;
+        font-weight: 300;
+font-size: 13px;
+line-height: 16px;
+color: #B1B1B1;
+margin: 15px 0 39px;
+    }
+    &__button{
+        font-size: 14px;
+line-height: 17px;
 color: #FFFFFF;
-    text-transform: uppercase;
-    margin: 17px 43px;
+padding: 16px 29px;
+background: #F16D7F;
+text-transform: uppercase;
+& svg {
+    fill: white;
+    margin-left: 20px;
+    }
+    &:hover{
+        background-color: white;
+        outline: 1px solid #F16D7F;
+        color: #F16D7F;
+        & svg{
+            fill: #F16D7F;
+        }
+}
+    }
+    &__text {
+        margin: 0 0 0 128px;
+        &_heading {
+            text-transform: uppercase;
+            padding-bottom: 22px;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+        &_paragraph{
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &_block {
+            max-width: 652px;
+            font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+margin: 16px 0 0 0;
+padding-left: 30px;
+background: url(img/checkmark.svg) left no-repeat;
+        }
+    }
 }

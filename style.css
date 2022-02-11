@@ -192,6 +192,10 @@ details {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s ease;
+}
+.sections__block:hover {
+  transform: scale(1.06);
 }
 .sections__block_link {
   display: block;
@@ -737,13 +741,17 @@ details {
   line-height: 17px;
   text-transform: uppercase;
   color: #F16D7F;
-  margin-top: 65px;
+  margin: 65px 0 27px;
+  position: relative;
 }
-.product-card__redline {
+.product-card__heading-top::after {
+  content: "";
   width: 63px;
   height: 3px;
   background: #EF5B70;
-  margin: 12px 0;
+  position: absolute;
+  top: 26px;
+  left: 46px;
 }
 .product-card__heading-bottom {
   font-weight: 300;
@@ -832,6 +840,7 @@ details {
   justify-content: center;
   align-items: center;
   margin-left: 24px;
+  padding-left: 14px;
 }
 
 .especial {
@@ -887,6 +896,9 @@ details {
   color: #222222;
   text-transform: uppercase;
 }
+.adress-form__heading-registration {
+  text-transform: capitalize;
+}
 .adress-form__button {
   width: 100px;
   height: 34px;
@@ -908,11 +920,26 @@ details {
   background: #F5F3F3;
   padding-top: 39px;
 }
-.checkout__line {
+.checkout__button {
+  width: 273px;
+  height: 50px;
+  background: #F16D7F;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 38px 43px;
+  position: relative;
+}
+.checkout__button::before {
+  content: "";
   width: 275px;
   height: 1px;
   background: #E2E2E2;
-  margin: 0 auto;
+  position: absolute;
+  top: -17px;
+  left: 0px;
 }
 
 .subtotal {
@@ -935,17 +962,76 @@ details {
   line-height: 19px;
   color: #222222;
   text-transform: uppercase;
-  margin: 0 0 21px 153px;
+  margin: 0 0 0 153px;
 }
 
-.checkout__button {
-  width: 273px;
-  height: 50px;
-  background: #F16D7F;
+.registration {
+  display: flex;
+  margin-top: 64px;
+}
+.registration__gender {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 11px;
+  line-height: 13px;
+  display: flex;
+  padding: 0 20px 33px 0;
+  justify-content: space-between;
+  width: 71px;
+}
+.registration__gender-box {
+  display: flex;
+}
+.registration__input-text {
+  max-width: 360px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin: 15px 0 39px;
+}
+.registration__button {
+  font-size: 14px;
+  line-height: 17px;
   color: #FFFFFF;
+  padding: 16px 29px;
+  background: #F16D7F;
   text-transform: uppercase;
-  margin: 17px 43px;
+}
+.registration__button svg {
+  fill: white;
+  margin-left: 20px;
+}
+.registration__button:hover {
+  background-color: white;
+  outline: 1px solid #F16D7F;
+  color: #F16D7F;
+}
+.registration__button:hover svg {
+  fill: #F16D7F;
+}
+.registration__text {
+  margin: 0 0 0 128px;
+}
+.registration__text_heading {
+  text-transform: uppercase;
+  padding-bottom: 22px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.registration__text_paragraph {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+.registration__text_block {
+  max-width: 652px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin: 16px 0 0 0;
+  padding-left: 30px;
+  background: url(img/checkmark.svg) left no-repeat;
 }/*# sourceMappingURL=style.css.map */
