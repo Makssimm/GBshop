@@ -512,6 +512,8 @@ details {
   text-transform: uppercase;
 }
 .filter__btn svg {
+  width: 15px;
+  height: 10px;
   margin: 0 0 0 11px;
   fill: currentColor;
 }
@@ -724,6 +726,7 @@ details {
   background-color: #F7F7F7;
   display: flex;
   align-items: center;
+  background-size: contain;
 }
 .carousel__buttons {
   display: flex;
@@ -742,7 +745,7 @@ details {
 
 .product-card {
   width: 1140px;
-  height: 661px;
+  height: 601px;
   background-color: white;
   border: 1px solid #EAEAEA;
   margin: -64px 0 129px;
@@ -872,6 +875,8 @@ details {
 }
 
 .cross {
+  width: 18px;
+  height: 18px;
   fill: #575757;
   position: absolute;
   top: 28px;
@@ -993,6 +998,9 @@ details {
   justify-content: space-between;
   width: 71px;
 }
+.registration__gender-esp {
+  display: none;
+}
 .registration__gender-box {
   display: flex;
 }
@@ -1102,6 +1110,92 @@ details {
   .footer__bottom_right {
     padding-right: 23px;
   }
+
+  .breadcrumbs__container {
+    padding: 0 16px;
+  }
+
+  .filters {
+    min-height: 81px;
+    padding: 24px 16px;
+  }
+
+  .filter {
+    margin-right: 72px;
+  }
+
+  .cards {
+    padding: 0px 10px;
+  }
+
+  .card-last {
+    display: none;
+  }
+
+  .carousel {
+    height: 624px;
+  }
+
+  .product-card {
+    max-width: 768px;
+  }
+
+  .product-cards {
+    margin-bottom: 128px;
+  }
+
+  .cart-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-left {
+    margin: 96px 0 10px 0;
+  }
+
+  .cart-right {
+    display: flex;
+    margin: 0;
+  }
+
+  .card-horizontal {
+    width: 734px;
+  }
+
+  .button-block {
+    width: 508px;
+    margin: 62px auto;
+  }
+
+  .adress-form {
+    margin-bottom: 128px;
+  }
+
+  .checkout {
+    margin: 38px 0 0 14px;
+  }
+
+  .registration__text_paragraph, .registration__text_block {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .registration__text_heading {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .registration__text {
+    margin: 0 16px 0 22px;
+  }
+
+  .registration {
+    margin-top: 40px;
+  }
+
+  .adress-form {
+    margin: 0 0 96px 16px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   div.sections__wrapper > div:nth-child(1) {
@@ -1163,5 +1257,141 @@ details {
 
   .footer__bottom_left {
     padding: 9px;
+  }
+
+  .breadcrumbs__container {
+    flex-direction: column;
+  }
+
+  .breadcrumbs__left {
+    padding-top: 24px;
+  }
+
+  .breadcrumbs__right {
+    padding-bottom: 46px;
+  }
+
+  .filter__btn span {
+    display: none;
+  }
+
+  .filter__btn svg {
+    width: 38px;
+    height: 25px;
+  }
+
+  .filters {
+    padding: 27px 51px 26px 25px;
+  }
+
+  .filter {
+    margin: 0;
+  }
+
+  .product-card {
+    max-width: 425px;
+    margin: -64px 0 64px;
+  }
+
+  .product-card__text {
+    width: 326px;
+    line-height: 20px;
+  }
+
+  .list-size__btn {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .list-size__btn svg {
+    top: 14%;
+    left: 113%;
+  }
+
+  .product-cards {
+    margin-bottom: 64px;
+  }
+
+  .product-card__price {
+    border: none;
+  }
+
+  .cart-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cart-right {
+    flex-direction: column;
+  }
+
+  .card-horizontal {
+    width: 358px;
+    height: 188px;
+  }
+
+  .cart-button {
+    width: 175px;
+    height: 33px;
+    font-size: 12px;
+  }
+
+  .button-block {
+    width: 362px;
+    margin: 0 auto;
+  }
+
+  .card-horizontal__text {
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 17px;
+  }
+
+  .card-horizontal__heading {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 0 25px;
+    width: 140px;
+  }
+
+  .card-horizontal__text_counter {
+    width: 24px;
+    height: 15px;
+    margin-left: 24px;
+    padding-left: 7px;
+    margin-top: 2px;
+  }
+
+  .cross {
+    width: 10px;
+    height: 10px;
+    top: 14px;
+    right: 15px;
+  }
+
+  .adress-form {
+    margin: 48px 0;
+  }
+
+  .checkout {
+    margin-bottom: 96px;
+  }
+
+  .registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .registration__text {
+    margin: 0 16px 96px 22px;
+  }
+
+  .breadcrumbs__container-short {
+    justify-content: center;
+  }
+
+  .registration__gender-esp {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
