@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
 
 $container-width: 1140px;
 /*Обнуление*/
@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
 body{
-    font-family: "Lato";
+    font-family: "Lato", "sans-serif";
 }
 
 .container{
@@ -347,6 +347,9 @@ text-align: center;
 color: #222224;
 padding-top: 30px;
         }
+    }
+    .italic{
+        font-style: italic;
     }
     &__right{
         width: $container-width/2;
